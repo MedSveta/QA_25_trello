@@ -1,6 +1,8 @@
 package tests;
 
+import dto.UserDTO;
 import manager.RandomData;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class LoginTests extends TestBase{
@@ -15,5 +17,12 @@ public class LoginTests extends TestBase{
 
         }
 
+    }
+
+    @Test
+    public  void loginPositiveTest(){
+        //UserDTO user = new UserDTO("sveta1978medved@gmail.com", "Medqwerty12345!");
+        app.getHelperUser().login(user);
+        Assert.assertTrue(app.getHelperUser().isElementPresent_btnAccount());
     }
 }

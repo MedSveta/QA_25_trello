@@ -38,4 +38,7 @@ public class HelperBase {
             throw new RuntimeException(e);
         }
     }
+    public boolean isTextInElementEquals(By locator, String text){
+        return findElementBase(locator).getText().equals(text);
+    }
 }

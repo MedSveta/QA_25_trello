@@ -2,17 +2,20 @@ package manager;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
     WebDriver driver;
+    ChromeOptions options;
     private HelperUser helperUser;
     private HelperBoard helperBoard;
 
 
     public void init() {
-        driver = new ChromeDriver();
+        options = new ChromeOptions().addArguments("--lang=en");
+        driver = new ChromeDriver(options);
         driver.navigate().to("https://trello.com/");
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);

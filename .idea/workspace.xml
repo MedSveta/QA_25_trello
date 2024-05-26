@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc3681d3-d40b-4f64-8bc1-6ab3d3121286" name="Changes" comment="create BoardTests">
+    <list default="true" id="fc3681d3-d40b-4f64-8bc1-6ab3d3121286" name="Changes" comment="added BoardTests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/BoardTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BoardTests.java" afterDir="false" />
@@ -58,7 +59,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Automation_testing/QA25/QA_25_trello&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.BoardTests.deleteBoardPositiveTest (1)">
+  <component name="RunManager" selected="Gradle.BoardTests.createNewBoardNegativeTest">
     <configuration name="BoardTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -176,10 +177,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.BoardTests.deleteBoardPositiveTest (1)" />
         <item itemvalue="Gradle.BoardTests.createNewBoardNegativeTest" />
-        <item itemvalue="Gradle.BoardTests.createNewBoardPositiveTest (1)" />
         <item itemvalue="Gradle.BoardTests" />
+        <item itemvalue="Gradle.BoardTests.deleteBoardPositiveTest (1)" />
+        <item itemvalue="Gradle.BoardTests.createNewBoardPositiveTest (1)" />
         <item itemvalue="Gradle.LoginTests.loginPositiveTest (1)" />
       </list>
     </recent_temporary>
@@ -221,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1714935132613</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added BoardTests">
+      <created>1715108178557</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715108178558</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -239,6 +247,7 @@
     <MESSAGE value="added startclass" />
     <MESSAGE value="create app, test, helper, random" />
     <MESSAGE value="create BoardTests" />
-    <option name="LAST_COMMIT_MESSAGE" value="create BoardTests" />
+    <MESSAGE value="added BoardTests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added BoardTests" />
   </component>
 </project>

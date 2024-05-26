@@ -16,9 +16,14 @@ public class HelperBoard extends HelperBase {
     By btnDots = By.xpath("//button[@aria-label='Show menu']");
     By btnCloseBoard = By.xpath("//ul[@class='board-menu-navigation']/li[last()]/a");
     By btnCloseConfirm = By.xpath("//input[@value='Close']");
-    By btnDeleteConfirm = By.xpath("//button[@data-testid='close-board-delete-board-button']");
+    By btnDelete = By.xpath("//button[@data-testid='close-board-delete-board-button']");
+    By btnDeleteConfirm = By.xpath("//button[@data-testid='close-board-delete-board-confirm-button']");
+    By popUpMessageBoardDelete = By.xpath("//span[@class='QMKgZFIlTLiEJN']");
+    By btnCloseCreateBoardForm = By.xpath("//button[@data-testid='popover-close']");
+    By textBoardTitleRequired = By.xpath("//p[text()='Board title is required']");
 
     public void createNewBoard(String boardTitle) {
+        pause(5);
         clickBase(btnCreateNewBoard);
         pause(3);
         typeBase(inputBoardTitle, boardTitle);
@@ -29,6 +34,9 @@ public class HelperBoard extends HelperBase {
         pause(3);
 
         return isTextInElementEquals(boardTitle, text);
+    }
+    public boolean isElementPresent_textBoardTitleRequired(){
+        return  isElementPresent(textBoardTitleRequired);
     }
 
     public boolean isAttributeDisabled() {
@@ -42,6 +50,16 @@ public class HelperBoard extends HelperBase {
         pause(3);
         clickBase(btnCloseBoard);
         clickBase(btnCloseConfirm);
+        clickBase(btnDelete);
         clickBase(btnDeleteConfirm);
     }
+
+    public boolean isTextInElementPresent_BoardDeleted() {
+        return isTextInElementEquals(popUpMessageBoardDelete, "Board deleted.");
+    }
+
+    public void closeCreateBoardForm() {
+        clickBase(btnCloseCreateBoardForm);
+    }
 }
+

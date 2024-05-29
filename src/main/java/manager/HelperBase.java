@@ -1,6 +1,7 @@
 package manager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -45,5 +46,8 @@ public class HelperBase {
     }
     public boolean isTextInElementEquals(By locator, String text){
         return findElementBase(locator).getText().equals(text);
+    }
+    public  void createScreenShot(){
+        TakeScreenShot.takeScreenShot((TakesScreenshot)driver);
     }
 }

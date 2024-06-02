@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc3681d3-d40b-4f64-8bc1-6ab3d3121286" name="Changes" comment="added DeleteBoardTests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/BoardDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/manager/TakeScreenShot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="fc3681d3-d40b-4f64-8bc1-6ab3d3121286" name="Changes" comment="added Logger and ScreenShot, Board DTO">
+      <change afterPath="$PROJECT_DIR$/src/main/java/manager/TestNGListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/manager/WDListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/TakeScreenShot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/TakeScreenShot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/BoardTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BoardTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +53,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Automation_testing/QA25/QA_25_trello"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Automation_testing/QA25/QA_25_trello&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Gradle.BoardTests.createNewBoardNegativeTest">
     <configuration name="TakeScreenShot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="manager.TakeScreenShot" />
@@ -231,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1716749545687</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added Logger and ScreenShot, Board DTO">
+      <created>1717008230617</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717008230617</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,6 +254,7 @@
     <MESSAGE value="create BoardTests" />
     <MESSAGE value="added BoardTests" />
     <MESSAGE value="added DeleteBoardTests" />
-    <option name="LAST_COMMIT_MESSAGE" value="added DeleteBoardTests" />
+    <MESSAGE value="added Logger and ScreenShot, Board DTO" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Logger and ScreenShot, Board DTO" />
   </component>
 </project>

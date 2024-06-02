@@ -3,15 +3,18 @@ package tests;
 import dto.BoardDTO;
 import manager.RandomData;
 import manager.TakeScreenShot;
+import manager.TestNGListener;
 import org.openqa.selenium.TakesScreenshot;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
+@Listeners(TestNGListener.class)
 
 public class BoardTests extends TestBase {
     Logger logger = LoggerFactory.getLogger(BoardTests.class);
@@ -34,12 +37,11 @@ public class BoardTests extends TestBase {
     public void createNewBoardNegativeTest() {
         BoardDTO board = BoardDTO.builder().boardTitle("").build();
         app.getHelperBoard().createNewBoard(board);
-        app.getHelperBoard().createScreenShot();
+        //app.getHelperBoard().createScreenShot();
        //Assert.assertTrue(app.getHelperBoard().isAttributeDisabled());
         Assert.assertTrue(app.getHelperBoard().isElementPresent_textBoardTitleRequired());
 
     }
-
 
     @Test
     public void deleteBoardPositiveTest(Method method) {

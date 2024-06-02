@@ -2,6 +2,7 @@ package tests;
 
 import dto.BoardDTO;
 import manager.RandomData;
+import manager.RetryAnalyzer;
 import manager.TakeScreenShot;
 import manager.TestNGListener;
 import org.openqa.selenium.TakesScreenshot;
@@ -33,7 +34,7 @@ public class BoardTests extends TestBase {
         Assert.assertTrue(app.getHelperBoard().isTextInElementEquals_boardTitle(board.getBoardTitle()));
     }
 
-    @Test
+    @Test(retryAnalyzer = RetryAnalyzer.class)
     public void createNewBoardNegativeTest() {
         BoardDTO board = BoardDTO.builder().boardTitle("").build();
         app.getHelperBoard().createNewBoard(board);

@@ -6,10 +6,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.testng.annotations.Listeners;
+
 
 import java.util.concurrent.TimeUnit;
-@Listeners(TestNGListener.class)
+
 
 public class ApplicationManager {
    // WebDriver driver;

@@ -15,7 +15,7 @@ public class TestBase {
     public void setUp() {
         app.init();
         logger.info("login with email -->"+user.getEmail()+ " password --> "+ user.getPassword());
-
+        app.getHelperUser().login(user);
     }
 
     @AfterSuite

@@ -1,5 +1,6 @@
 package manager;
 
+import interfaces.Path;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class HelperBase {
+public class HelperBase implements Path {
     WebDriver driver;
 
     public HelperBase(WebDriver driver) {

@@ -20,11 +20,12 @@ public class ApplicationManager {
     private HelperUser helperUser;
     private HelperBoard helperBoard;
 
+    private HelperProfile helperProfile;
 
 
     public void init() {
         options = new ChromeOptions().addArguments("--lang=en");
-        driver = new EventFiringWebDriver(new ChromeDriver(options);
+        driver = new EventFiringWebDriver(new ChromeDriver(options));
 
         driver.navigate().to("https://trello.com/");
         driver.manage().window().maximize();
@@ -33,6 +34,7 @@ public class ApplicationManager {
         logger.info("start testing --- navigate to --> https://trello.com/");
         helperUser = new HelperUser(driver);
         helperBoard = new HelperBoard(driver);
+        helperProfile = new HelperProfile(driver);
         driver.register(new WDListener());
 
     }
@@ -44,6 +46,9 @@ public class ApplicationManager {
         //    driver.quit();
         logger.info("stop testing --> https://trello.com/");
     }
+public  HelperProfile getHelperProfile(){
+        return  helperProfile;
+}
 
     public HelperUser getHelperUser(){
         return helperUser;

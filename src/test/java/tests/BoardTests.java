@@ -20,10 +20,10 @@ import java.lang.reflect.Method;
 public class BoardTests extends TestBase {
     Logger logger = LoggerFactory.getLogger(BoardTests.class);
 
-    @BeforeClass
-    public void login() {
-        app.getHelperUser().login(user);
-    }
+   // @BeforeClass
+   // public void login() {
+        //app.getHelperUser().login(user);
+    //}
 
     @Test
     public void createNewBoardPositiveTest(Method method) {
@@ -44,7 +44,7 @@ public class BoardTests extends TestBase {
 
     }
 
-    @Test
+    @Test(retryAnalyzer = RetryAnalyzer.class)
     public void deleteBoardPositiveTest(Method method) {
         String boardTitle = RandomData.randomString(7);
         BoardDTO board = BoardDTO.builder()

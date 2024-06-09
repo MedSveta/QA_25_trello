@@ -6,5 +6,6 @@ public class ProfileTests extends TestBase{
     @Test
     public void  changeProfileAvatarPositiveTest(){
     app.getHelperProfile().changeAvatar("img.png");
+
     }
 }

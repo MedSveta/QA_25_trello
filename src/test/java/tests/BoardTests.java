@@ -1,5 +1,6 @@
 package tests;
 
+import dataproviders.DataProviderBoard;
 import dto.BoardDTO;
 import manager.RandomData;
 import manager.RetryAnalyzer;
@@ -44,12 +45,13 @@ public class BoardTests extends TestBase {
 
     }
 
-    @Test(retryAnalyzer = RetryAnalyzer.class)
-    public void deleteBoardPositiveTest(Method method) {
-        String boardTitle = RandomData.randomString(7);
-        BoardDTO board = BoardDTO.builder()
-                .boardTitle("DEL-"+boardTitle)
-                .build();
+    @Test(retryAnalyzer = RetryAnalyzer.class,
+    dataProvider = "DPFile_deleteBoardPositiveTest", dataProviderClass = DataProviderBoard.class)
+    public void deleteBoardPositiveTest(Method method, BoardDTO board) {
+//        String boardTitle = RandomData.randomString(7);
+//        BoardDTO board = BoardDTO.builder()
+//                .boardTitle("DEL-"+boardTitle)
+//                .build();
         app.getHelperBoard().createNewBoard(board);
         if (app.getHelperBoard().isTextInElementEquals_boardTitle("DEL-" + board.getBoardTitle())) {
             logger.info("start test "+method.getName()+ " board title --> "+board.getBoardTitle());

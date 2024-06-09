@@ -24,7 +24,8 @@ public class HelperBase implements Path {
         element.click();
     }
     public void clickBaseWait(By locator, int time){
-        new WebDriverWait(driver, time).until(ExpectedConditions.elementToBeClickable(locator));
+        new WebDriverWait(driver, time).until(ExpectedConditions.elementToBeClickable(locator)).click();
+
     }
 
     public void typeBase(By locator, String text){

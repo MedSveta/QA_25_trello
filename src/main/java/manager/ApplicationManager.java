@@ -3,6 +3,9 @@ package manager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 
 
 public class ApplicationManager {
-   // WebDriver driver;
+    // WebDriver driver;
     EventFiringWebDriver driver;
     ChromeOptions options;
 
@@ -21,11 +24,24 @@ public class ApplicationManager {
     private HelperBoard helperBoard;
 
     private HelperProfile helperProfile;
+    static String browser;
 
+    public ApplicationManager() {
+        browser = System.getProperty("browser", BrowserType.CHROME);
+    }
 
     public void init() {
-        options = new ChromeOptions().addArguments("--lang=en");
-        driver = new EventFiringWebDriver(new ChromeDriver(options));
+//        options = new ChromeOptions().addArguments("--lang=en");
+//        driver = new EventFiringWebDriver(new ChromeDriver(options));
+        if (browser.equals(BrowserType.FIREFOX)) {
+            FirefoxOptions options1 = new FirefoxOptions();
+            options1.addPreference("intl.accept_languages", "en");
+            driver = new EventFiringWebDriver(new FirefoxDriver(options1));
+            logger.info("testing on FireFox");
+        } else {
+            options = new ChromeOptions().addArguments("--lang=en");
+            driver = new EventFiringWebDriver(new ChromeDriver(options));
+        }
 
         driver.navigate().to("https://trello.com/");
         driver.manage().window().maximize();
@@ -40,20 +56,21 @@ public class ApplicationManager {
     }
 
 
-
     public void stop() {
-       // if(driver !=null)
+        // if(driver !=null)
         //    driver.quit();
         logger.info("stop testing --> https://trello.com/");
     }
-public  HelperProfile getHelperProfile(){
-        return  helperProfile;
-}
 
-    public HelperUser getHelperUser(){
+    public HelperProfile getHelperProfile() {
+        return helperProfile;
+    }
+
+    public HelperUser getHelperUser() {
         return helperUser;
     }
-    public  HelperBoard getHelperBoard(){
+
+    public HelperBoard getHelperBoard() {
         return helperBoard;
     }
 }

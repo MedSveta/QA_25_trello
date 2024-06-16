@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc3681d3-d40b-4f64-8bc1-6ab3d3121286" name="Changes" comment="added  serialiser, helper profile">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataproviders/DataProviderBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/files_csv/boards.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="fc3681d3-d40b-4f64-8bc1-6ab3d3121286" name="Changes" comment="added  DataProvider and TestProfile">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/bash_command.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/boardtests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/Path.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BoardTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BoardTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ProfileTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ProfileTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +54,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Automation_testing/QA25/QA_25_trello"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Automation_testing/QA25/QA_25_trello&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Gradle.ProfileTests.changeProfileAvatarPositiveTest (1)">
     <configuration name="BoardDTO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dto.BoardDTO" />
@@ -249,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717613078666</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added  DataProvider and TestProfile">
+      <created>1717959195575</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717959195575</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,6 +277,7 @@
     <MESSAGE value="added  Listeners" />
     <MESSAGE value="added  RetryAnalyzer" />
     <MESSAGE value="added  serialiser, helper profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="added  serialiser, helper profile" />
+    <MESSAGE value="added  DataProvider and TestProfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="added  DataProvider and TestProfile" />
   </component>
 </project>

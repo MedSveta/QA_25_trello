@@ -11,14 +11,14 @@ public class TestBase {
     static ApplicationManager app = new ApplicationManager();
     public Logger logger = LoggerFactory.getLogger(TestBase.class);
     UserDTO user = new UserDTO("sveta1978medved@gmail.com", "Medqwerty12345!");
-    @BeforeSuite
+    @BeforeSuite(alwaysRun = true)
     public void setUp() {
         app.init();
         logger.info("login with email -->"+user.getEmail()+ " password --> "+ user.getPassword());
         app.getHelperUser().login(user);
     }
 
-    @AfterSuite
+    @AfterSuite(alwaysRun = true)
     public void tearDown() {
         app.stop();
     }

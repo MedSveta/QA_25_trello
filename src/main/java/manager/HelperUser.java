@@ -16,6 +16,7 @@ public class HelperUser extends HelperBase {
     By inputPassword = By.id("password");
     By btnLoginSubmit = By.id("login-submit");
     By btnAccount = By.cssSelector("button[data-testid='header-member-menu-button']");
+    By btnWOTwoStepVerification = By.id("mfa-promote-dismiss");
 
     public void login(UserDTO user) {
         clickBase(btnLoginOnHeader);
@@ -23,8 +24,10 @@ public class HelperUser extends HelperBase {
         clickBase(btnContinue);
         typeBase(inputPassword, user.getPassword());
         clickBase(btnLoginSubmit);
+        clickBase(btnWOTwoStepVerification);
     }
     public  boolean isElementPresent_btnAccount(){
         return isElementPresent(btnAccount);
     }
+
 }

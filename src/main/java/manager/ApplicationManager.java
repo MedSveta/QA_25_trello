@@ -11,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
+import java.awt.print.PageFormat;
 import java.util.concurrent.TimeUnit;
 
 
@@ -25,6 +26,8 @@ public class ApplicationManager {
 
     private HelperProfile helperProfile;
     static String browser;
+    static String url;
+
 
     public ApplicationManager() {
         browser = System.getProperty("browser", BrowserType.CHROME);
@@ -43,11 +46,13 @@ public class ApplicationManager {
             driver = new EventFiringWebDriver(new ChromeDriver(options));
         }
 
-        driver.navigate().to("https://trello.com/");
+        //driver.navigate().to("https://trello.com/");
+        url = PropertiesReader.getProperty("login.properties","url");
+        driver.navigate().to(url);
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        logger.info("start testing --- navigate to --> https://trello.com/");
+        logger.info("start testing --- navigate to --> "+url);
         helperUser = new HelperUser(driver);
         helperBoard = new HelperBoard(driver);
         helperProfile = new HelperProfile(driver);

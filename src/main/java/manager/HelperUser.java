@@ -24,7 +24,7 @@ public class HelperUser extends HelperBase {
         clickBase(btnContinue);
         typeBase(inputPassword, user.getPassword());
         clickBase(btnLoginSubmit);
-        clickBase(btnWOTwoStepVerification);
+        //clickBase(btnWOTwoStepVerification);
     }
     public  boolean isElementPresent_btnAccount(){
         return isElementPresent(btnAccount);

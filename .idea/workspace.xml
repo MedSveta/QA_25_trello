@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc3681d3-d40b-4f64-8bc1-6ab3d3121286" name="Changes" comment="added  Task, xml">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/manager/PropertiesReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/smoke_tests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="fc3681d3-d40b-4f64-8bc1-6ab3d3121286" name="Changes" comment="added  TaskSmoke">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/Path.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperProfile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BoardTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BoardTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/ProfileTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ProfileTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
     </list>
@@ -65,11 +59,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Automation_testing/QA25/QA_25_trello/src/test/resources"
+    "last_opened_file_path": "C:/Automation_testing/QA25/QA_25_trello/src/test/resources/photos"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Automation_testing\QA25\QA_25_trello\src\test\resources\photos" />
       <recent name="C:\Automation_testing\QA25\QA_25_trello\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -275,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718564595699</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added  TaskSmoke">
+      <created>1718737185666</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1718737185666</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -301,6 +303,7 @@
     <MESSAGE value="added  serialiser, helper profile" />
     <MESSAGE value="added  DataProvider and TestProfile" />
     <MESSAGE value="added  Task, xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="added  Task, xml" />
+    <MESSAGE value="added  TaskSmoke" />
+    <option name="LAST_COMMIT_MESSAGE" value="added  TaskSmoke" />
   </component>
 </project>

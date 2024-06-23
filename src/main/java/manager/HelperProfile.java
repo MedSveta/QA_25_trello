@@ -23,6 +23,9 @@ public class HelperProfile extends HelperBase implements Path {
     By btnChangeProfilePhoto = By.xpath("//button[@data-testid='change-avatar']");
     By btnUploadPhoto = By.xpath("//input[@id='image-input']");
     By btnUpload = By.xpath("//button[@type='submit']");
+    By popUpMessageAvatarAdded = By.xpath("//span[@class='css-47z6js']");
+    By messageWrongFileFormat = By.xpath("//span[@class='css-d8rbi4']");
+    By btnCanselProfile = By.xpath("//div[@role='group']/button[@class='css-1luyhz2']");
 
     public void changeAvatar(String fileName) {
         clickBaseWait(btnAccount, 3);
@@ -40,5 +43,22 @@ public class HelperProfile extends HelperBase implements Path {
         System.out.println(path);
         driver.findElement(btnUploadPhoto).sendKeys(path);
         clickBaseWait(btnUpload, 3);
+    }
+    public boolean isTextInElementPresent_AvatarAdded() {
+
+        return isTextInElementEquals(popUpMessageAvatarAdded, "Avatar added", 5);
+    }
+    public boolean isTextInElementPresent_wrongFileFormat() {
+        return isTextInElementEquals(messageWrongFileFormat, "Upload a photo or select from some default options",5);
+    }
+
+    public void clickBtnCancelProfile() {
+        clickBase(btnCanselProfile);
+    }
+
+    public void closeWindowAtlassianAccount() {
+        List<String> tabs = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1)).close();
+        driver.switchTo().window(tabs.get(0));
     }
 }
